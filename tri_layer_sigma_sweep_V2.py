@@ -60,7 +60,7 @@ R_sigma2 = [R_trilayer((sigmas_ref[0], s, sigmas_ref[2]), D) for s in sigma_rang
 R_sigma3 = [R_trilayer((sigmas_ref[0], sigmas_ref[1], s), D) for s in sigma_range]
 
 # -----------------------------
-# 6) Plot results
+# 6) Plot
 # -----------------------------
 plt.figure(figsize=(8, 5.5))
 plt.semilogx(sigma_range, 10 * np.log10(R_sigma1), label=r"$\sigma_1$ varied")
